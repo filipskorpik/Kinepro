@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/************ Reusable *************/
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  width: 98%;
+}
+/*# sourceMappingURL=style.css.map */

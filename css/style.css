@@ -7,8 +7,44 @@
 
 /************ Reusable *************/
 .container {
-  max-width: 1020px;
-  margin: 0 auto;
-  width: 98%;
+  max-width: 1170px;
+  width: 96%;
+  margin: auto;
+}
+
+.header {
+  background-color: #480;
+  height: 200px;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-block__logo img {
+  width: 500px;
+}
+
+.header-block__navbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-block__navbar li {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-block__navbar li a {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

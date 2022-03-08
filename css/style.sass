@@ -5,9 +5,31 @@
 
 /************ Reusable *************/
 .container
-    max-width: 1020px
-    margin: 0 auto
-    width: 98%
+    max-width: 1170px
+    width: 96%
+    margin: auto
     
+
+.header
+    background-color: #480
+    height: 200px
+    &-block
+        display: flex
+        //flex-direction: row
+        &__logo
+            & img
+                width: 500px
+        &__navbar
+            & ul
+                list-style: none
+                display: flex
+                flex-direction: row
+                
+
+            & li
+                justify-content: space-around
+                & a
+                    text-decoration: none
+                    color: #fff
 
     

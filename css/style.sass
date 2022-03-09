@@ -9,7 +9,7 @@
     width: 96%
     margin: auto
     
-
+/************ Header *************/
 .header
     background-color: #480
     height: 200px
@@ -17,6 +17,7 @@
         display: flex
         //flex-direction: row
         &__logo
+            width: 50%
             & img
                 width: 500px
         &__navbar
@@ -24,12 +25,27 @@
                 list-style: none
                 display: flex
                 flex-direction: row
-                
-
+                justify-content: space-evenly
             & li
                 justify-content: space-around
                 & a
                     text-decoration: none
                     color: #fff
-
-    
+                    font-size: 24px
+        &__right
+            width: 50%    
+            display: flex
+            flex-direction: column
+        &__icons
+           display: flex
+           justify-content: flex-end
+            & ul
+                display: flex
+                flex-direction: row
+                & li
+                    list-style: none
+                    & a
+                        font-size: 0px
+                        width: 20px
+                        & img
+                            width: 35px 

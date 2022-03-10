@@ -104,8 +104,8 @@
 
 /**************** adress *****************/
 .main {
-  background: url("../images/main-bcg.jpg") no-repeat;
-  background-position: 160% 0%;
+  background: url("../images/main-bcg2.jpg") no-repeat;
+  background-position: 130% 0%;
 }
 
 .adress {
@@ -136,6 +136,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #706b6b;
+  border-radius: 10px;
 }
 
 .adress-right a {

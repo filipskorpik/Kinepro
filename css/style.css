@@ -13,7 +13,7 @@
 }
 
 .emptySpace {
-  height: 30px;
+  height: 50px;
 }
 
 /**************** Header *****************/
@@ -100,6 +100,7 @@
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+  text-shadow: 1px 1px #706b6b;
 }
 
 /**************** adress *****************/
@@ -110,28 +111,33 @@
 
 .adress {
   position: relative;
-  height: 400px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .adress-left {
-  height: 400px;
+  height: 350px;
   width: 40%;
   background-color: #fff;
 }
 
+.adress-left__text {
+  color: #706b6b;
+  font-size: 30px;
+}
+
 .adress-right {
-  height: 400px;
+  height: 350px;
   width: 60%;
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -140,12 +146,82 @@
   border-radius: 10px;
 }
 
-.adress-right a {
+.adress-right__adress {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.adress-right__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adress-right__tel {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
   font-size: 50px;
   padding-bottom: 20px;
   letter-spacing: 1px;
+}
+
+/**************** offer *****************/
+.offer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../images/cekarna.png) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/cekarna.png) no-repeat;
+  margin: 50px 0;
+  height: 500px;
+}
+
+.offer-block {
+  margin-left: 58%;
+}
+
+.offer-block__text {
+  list-style-type: none;
+  color: #706b6b;
+}
+
+.offer-block__text p {
+  font-size: 23px;
+  padding-top: 25px;
+}
+
+.us {
+  margin: 50px 0;
+}
+
+.us-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.us-block__terap {
+  width: 227px;
+  border: 2px solid #706b6b;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.us-block__terap h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.us-block__img {
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */

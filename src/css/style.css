@@ -10,7 +10,7 @@
 .container {
   max-width: 1170px;
   width: 96%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .emptySpace {
@@ -21,6 +21,31 @@
 .header {
   background-color: #480;
   height: 200px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.header-nav__item {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.header-nav__item:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .header-block {
@@ -57,26 +82,14 @@
           justify-content: flex-end;
 }
 
-.header-block__iul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  list-style: none;
-}
-
-.header-block__ili {
-  font-size: 0;
-}
-
 .header-block__img {
   width: 40px;
+}
+
+.header-block__navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
 }
 
 .header-block__nul {
@@ -97,11 +110,15 @@
   height: 155px;
 }
 
-.header-block__nli a {
+.header-block__nul a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
   text-shadow: 1px 1px #706b6b;
+}
+
+.header-block__nul a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 /**************** adress *****************/

@@ -1,4 +1,6 @@
 @import "variables"
+
+$primary: #480
     
 *
     margin: 0
@@ -7,17 +9,39 @@
     font-family: Arial, Helvetica, sans-serif
 
 /**************** Reusable *****************/
-.container
+.cont
     max-width: 1170px
     width: 96%
     margin: 0 auto
 .emptySpace
     height: 50px
+a:hover
+    color: #fff
     
 /**************** Header *****************/
+
+.navbar-brand
+    @media only screen and(max-width: 780px)
+        max-width: 250px
+    @media only screen and(max-width: 400px)
+        max-width: 200px
+    @media only screen and(max-width: 340px)
+        max-width: 160px
+.nav-link
+    color: #fff
+    &:hover, &:focus
+        color: #fff
+        border-bottom: 3px solid #fff
+        padding-bottom: 0
+
+
 .header
     background-color: #480
-    height: 200px
+    height: 160px
+    @media only screen and(max-width: 780px)
+        height: 133px
+    @media only screen and(max-width: 400px)
+        height: 120px
     &-nav
         display: flex
         flex-direction: row
@@ -28,14 +52,15 @@
             color: #fff
             text-decoration: none
             margin-left: 15px
-            &:hover
+            &:hover, &:focus
                 border-bottom: 2px solid #fff
+                color: #fff
     &-block
         display: flex
         //flex-direction: row
        
         &__image
-            width: 500px
+            width: 50%
         &__right
             width: 50%
             display: flex
@@ -76,8 +101,9 @@
     
 /**************** adress *****************/
 .main
-    background: url('../images/main-bcg2.jpg') no-repeat
-    background-position: 130% 0%
+    height: $sectionAdressHeigh
+    background: url('../images/main-bcg2.jpg')
+    // background-position: 130% 0%
     
    
 .adress

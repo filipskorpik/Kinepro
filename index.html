@@ -12,38 +12,43 @@
   <!--------- Header ------------>  
     <header class="header">
         <div class="container">
-            <ul class="header-nav">
+            <ul class="header-nav mb-0">
                 <li><a href="#" title="Česky" id="lang0-cs" class="header-nav__item">CZ</a></li>
                 <li><a href="#" title="Deutsch" id="lang3-de" class="header-nav__item">DE</a></li>
                 <li><a href="#" title="English" id="lang1-en" class="header-nav__item">ENG</a></li>
                 <li><a href="#" title="Русский" id="lang2-ru" class="header-nav__item">RU</a></li>
             </ul>
                 
+            <!-- bootstrap navbar -->
+            <nav class="navbar navbar-expand-md sticky-top" style="z-index: 1100; background-color: #480;">
+                <div class="container-fluid ">
+                    <a href="#" class="navbar-brand"><img src="images/logo-kinepro-100.png" width="100%" alt="logo Kinepro"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="color: #fff; ">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </span>
+                      </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav fs-5 ">
+                            <li class="nav-item ps-2 "><a href="#" class="nav-link">O&nbsp;nás</a></li>
+                            <li class="nav-item ps-2"><a href="#" class="nav-link">Pro&nbsp;pacienty</a></li>
+                            <li class="nav-item ps-2"><a href="#" class="nav-link">Vojtova&nbsp;metoda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
             
-            <div class="header-block">
-                <div class="header-block__logo">
-                    <a href="#">
-                        <img class="header-block__image" src="images/logo-kinepro.png" alt="logo">
-                    </a>
-                </div>
-                <div class="header-block__right">
-                  
-                    <nav class="header-block__navbar">
-                       <ul class="header-block__nul">
-                           <li class="header-block__nli"><a href="#">O nás</a></li>
-                           <li class="header-block__nli"><a href="#">Vojtova metoda</a></li>
-                           <li class="header-block__nli"><a href="#">Pro pacienty</a></li>
-                       </ul>
-                    </nav>
-                </div>
-                
-        </div>
-        
-        </div>
     </header>
     <main>
-         <!--------- adress ------------> 
+       <!--------- adress  ------------>
          <div class="emptySpace"></div>
+         
         <section class="main">
             <div class="main-background"></div>
             
@@ -62,7 +67,8 @@
                 </div>
                     
             </div>
-            <!--------- Offer ------------> 
+
+<!--------- Offer 
         </section>
         <section class="offer">
             <div class="container">
@@ -115,7 +121,7 @@
     <footer></footer>
 
 
-
+------------> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

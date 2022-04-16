@@ -7,7 +7,7 @@
 }
 
 /**************** Reusable *****************/
-.container {
+.cont {
   max-width: 1170px;
   width: 96%;
   margin: 0 auto;
@@ -17,10 +17,54 @@
   height: 50px;
 }
 
+a:hover {
+  color: #fff;
+}
+
 /**************** Header *****************/
+@media only screen and (max-width: 780px) {
+  .navbar-brand {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-brand {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .navbar-brand {
+    max-width: 160px;
+  }
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 0;
+}
+
 .header {
   background-color: #480;
-  height: 200px;
+  height: 160px;
+}
+
+@media only screen and (max-width: 780px) {
+  .header {
+    height: 133px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    height: 120px;
+  }
 }
 
 .header-nav {
@@ -44,8 +88,9 @@
   margin-left: 15px;
 }
 
-.header-nav__item:hover {
+.header-nav__item:hover, .header-nav__item:focus {
   border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 .header-block {
@@ -55,7 +100,7 @@
 }
 
 .header-block__image {
-  width: 500px;
+  width: 50%;
 }
 
 .header-block__right {
@@ -123,8 +168,8 @@
 
 /**************** adress *****************/
 .main {
-  background: url("../images/main-bcg2.jpg") no-repeat;
-  background-position: 130% 0%;
+  height: 350px;
+  background: url("../images/main-bcg2.jpg");
 }
 
 .adress {

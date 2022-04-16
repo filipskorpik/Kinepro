@@ -1,6 +1,10 @@
 @import "variables"
 
+$sectionAdressHeigh: 450px
+$grey: #706b6b
+$green: #480
 $primary: #480
+$white: #fff
     
 *
     margin: 0
@@ -9,36 +13,31 @@ $primary: #480
     font-family: Arial, Helvetica, sans-serif
 
 /**************** Reusable *****************/
-.cont
-    max-width: 1170px
-    width: 96%
-    margin: 0 auto
-.emptySpace
-    height: 50px
-a:hover
-    color: #fff
+a
+    &:hover, &:focus
+        color: $white
     
 /**************** Header *****************/
 
 .navbar-brand
-    @media only screen and(max-width: 780px)
+    @media only screen and(max-width: 991px)
         max-width: 250px
     @media only screen and(max-width: 400px)
         max-width: 200px
     @media only screen and(max-width: 340px)
         max-width: 160px
-.nav-link
-    color: #fff
-    &:hover, &:focus
-        color: #fff
-        border-bottom: 3px solid #fff
-        padding-bottom: 0
 
+.nav-link
+    color: $white
+    &:hover, &:focus
+        color: $white
+        text-decoration: underline
+        padding-bottom: 0
 
 .header
     background-color: #480
-    height: 160px
-    @media only screen and(max-width: 780px)
+    height: 162px
+    @media only screen and(max-width: 991px)
         height: 133px
     @media only screen and(max-width: 400px)
         height: 120px
@@ -49,79 +48,98 @@ a:hover
         list-style-type: none
         padding-top: 10px
         &__item
-            color: #fff
+            color: $white
             text-decoration: none
             margin-left: 15px
             &:hover, &:focus
-                border-bottom: 2px solid #fff
-                color: #fff
-    &-block
-        display: flex
-        //flex-direction: row
+                border-bottom: 2px solid $white
+                color: $white
+    // &-block
+    //     display: flex
+    //     //flex-direction: row
        
-        &__image
-            width: 50%
-        &__right
-            width: 50%
-            display: flex
-            flex-direction: column
-        &__icons  
-            display: flex
-            flex-direction: row
-            justify-content: flex-end    
+    //     &__image
+    //         width: 50%
+    //     &__right
+    //         width: 50%
+    //         display: flex
+    //         flex-direction: column
+    //     &__icons  
+    //         display: flex
+    //         flex-direction: row
+    //         justify-content: flex-end    
         
             
         
-        &__img
-            width: 40px
+    //     &__img
+    //         width: 40px
         
-        &__navbar
-            position: sticky
-            top: 10px
-        &__nul
-            list-style: none
-            display: flex
-            flex-direction: row
-            justify-content: space-evenly
-            align-items: center   
-            height: 155px
+    //     &__navbar
+    //         position: sticky
+    //         top: 10px
+    //     &__nul
+    //         list-style: none
+    //         display: flex
+    //         flex-direction: row
+    //         justify-content: space-evenly
+    //         align-items: center   
+    //         height: 155px
             
             
        
             
             
-            & a
-                text-decoration: none
-                color: #fff
-                font-size: 20px
-                text-shadow: 1px 1px $grey
-                &:hover
-                    border-bottom: 2px solid #fff
+    //         & a
+    //             text-decoration: none
+    //             color: #$white
+    //             font-size: 20px
+    //             text-shadow: 1px 1px $grey
+    //             &:hover
+    //                 border-bottom: 2px solid #$white
 
     
 /**************** adress *****************/
 .main
-    height: $sectionAdressHeigh
-    background: url('../images/main-bcg2.jpg')
-    // background-position: 130% 0%
-    
+    margin-top: 50px
+    position: relative
+    &-background
+        position: absolute
+        right: 0
+        height: $sectionAdressHeigh
+        width: 50%
+        background-color: $grey
+        @media only screen and(max-width: 1200px)
+            height: $sectionAdressHeigh - 100px
+        @media only screen and(max-width: 991px)
+            height: 200px
+            margin-top: 82px
+        
    
 .adress
-    position: relative
     height: $sectionAdressHeigh
-    display: flex
-    
-
+    @media only screen and(max-width: 1200px)
+        height: $sectionAdressHeigh - 100px
+    @media only screen and(max-width: 991px)
+        display: flex
+        flex-direction: column
     &-left
-        height: $sectionAdressHeigh
         width: 40%
-        background-color: #fff
+        background-color: $white
+        padding-bottom: 40px
+        @media only screen and(max-width: 991px)
+            width: 100%
+        
         &__text
             color: $grey
-            font-size: 30px
+            font-size: 35px
+            @media only screen and(max-width: 991px)
+                font-size: 28px
+            @media only screen and(max-width: 500px)
+                font-size: 20px
+                
         
     &-right
-        height: $sectionAdressHeigh
+        
         width: 60%
         text-align: right
         display: flex
@@ -129,30 +147,48 @@ a:hover
         flex-direction: column
         background-color: $grey
         border-radius: 10px
+        @media only screen and(max-width: 991px)
+            width: 80%
+            margin-left: 20%
+        @media only screen and(max-width: 500px)
+            width: 90%
+            margin-left: 10%
+            height: 250px
         &__adress
             text-decoration: none
-            color: #fff
+            color: $white
             display: inline-block
             margin-top: 20px
             font-size: 20px
+            @media only screen and(max-width: 991px)
+                margin-top: 0
+                margin-bottom: 20px
+                
             
         &__down
            display: flex
            flex-direction: column 
-        &__tel 
+        &__tel, &__mail
             text-decoration: none
-            color: #fff
+            color: $white
             font-weight: 600
             font-size: 50px
             padding-bottom: 20px
             letter-spacing: 1px
-            
+            @media only screen and(max-width: 1200px)
+                font-size: 40px
+                padding-bottom: 10px
+                font-weight: 500
+            @media only screen and(max-width: 991px)
+                font-size: 30px
+                padding-bottom: 0
         
 /**************** offer *****************/
 .offer
-    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.7)), url(../images/cekarna.png) no-repeat
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.7)), url(../images/cekarna.png) 
+    background-image: url(../images/cekarna.png)
     margin: 50px 0
-    height: 500px     
+    height: 500px
     &-block
         margin-left: 58%
         &__title
@@ -166,18 +202,13 @@ a:hover
 
 
 .us
-    margin: 50px 0   
-    &-block
-        display: flex
-        justify-content: space-evenly
-        &__terap
-            width: 227px
-            border: 2px solid $grey
-            object-fit: cover
-            overflow: hidden
-            & h3
-                text-align: center
-                padding: 10px
-        &__img
-            height: 300px
-            
+    margin: 50px 0
+    background-color: #706b6b4d
+   
+footer
+    background-color: #706b6b
+
+.table-opening
+    width: 60%
+.socials a
+    color: #000

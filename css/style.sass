@@ -111,8 +111,10 @@ a
         @media only screen and(max-width: 1200px)
             height: $sectionAdressHeigh - 100px
         @media only screen and(max-width: 991px)
-            height: 200px
+            height: 250px
             margin-top: 82px
+        @media only screen and(max-width: 500px)
+            margin-top: 70px
         
    
 .adress
@@ -150,10 +152,11 @@ a
         @media only screen and(max-width: 991px)
             width: 80%
             margin-left: 20%
+            height: 250px
         @media only screen and(max-width: 500px)
             width: 90%
             margin-left: 10%
-            height: 250px
+            
         &__adress
             text-decoration: none
             color: $white
@@ -190,7 +193,7 @@ a
     margin: 50px 0
     height: 500px
     &-block
-        margin-left: 58%
+        
         &__title
 
         &__text
@@ -204,7 +207,24 @@ a
 .us
     margin: 50px 0
     background-color: #706b6b4d
-   
+.mail
+    text-decoration: none
+    color: #000
+    &:hover
+        text-decoration: underline
+        color: #000
+.photos
+    margin-bottom: 50px
+    @media only screen and(max-width: 610px)
+        margin-bottom: -10px
+    @media only screen and(max-width: 550px)
+        margin-bottom: -50px
+    @media only screen and(max-width: 450px)
+        margin-bottom: -100px
+    @media only screen and(max-width: 400px)
+        margin-bottom: -150px
+    @media only screen and(max-width: 350px)
+        margin-bottom: -170px
 footer
     background-color: #706b6b
 

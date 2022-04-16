@@ -105,8 +105,14 @@ a:hover, a:focus {
 
 @media only screen and (max-width: 991px) {
   .main-background {
-    height: 200px;
+    height: 250px;
     margin-top: 82px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-background {
+    margin-top: 70px;
   }
 }
 
@@ -182,6 +188,7 @@ a:hover, a:focus {
   .adress-right {
     width: 80%;
     margin-left: 20%;
+    height: 250px;
   }
 }
 
@@ -189,7 +196,6 @@ a:hover, a:focus {
   .adress-right {
     width: 90%;
     margin-left: 10%;
-    height: 250px;
   }
 }
 
@@ -251,10 +257,6 @@ a:hover, a:focus {
   height: 500px;
 }
 
-.offer-block {
-  margin-left: 58%;
-}
-
 .offer-block__text {
   list-style-type: none;
   color: #706b6b;
@@ -268,6 +270,50 @@ a:hover, a:focus {
 .us {
   margin: 50px 0;
   background-color: #706b6b4d;
+}
+
+.mail {
+  text-decoration: none;
+  color: #000;
+}
+
+.mail:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.photos {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 610px) {
+  .photos {
+    margin-bottom: -10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .photos {
+    margin-bottom: -50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .photos {
+    margin-bottom: -100px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .photos {
+    margin-bottom: -150px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .photos {
+    margin-bottom: -170px;
+  }
 }
 
 footer {

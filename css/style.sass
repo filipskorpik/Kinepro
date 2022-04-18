@@ -13,9 +13,24 @@ $white: #fff
     font-family: Arial, Helvetica, sans-serif
 
 /**************** Reusable *****************/
+.myContainer
+    max-width: 1000px
+    margin: 0 auto
 a
     &:hover, &:focus
         color: $white
+.noFocus
+    color: #000!important
+.justify
+    text-align: justify!important
+.bg-second
+    background-color: #43383836
+.textColorGreen
+    color: $green
+.mt2
+    @media only screen and(max-width: 500px)
+        margin-top: 20px
+
     
 /**************** Header *****************/
 
@@ -54,49 +69,7 @@ a
             &:hover, &:focus
                 border-bottom: 2px solid $white
                 color: $white
-    // &-block
-    //     display: flex
-    //     //flex-direction: row
-       
-    //     &__image
-    //         width: 50%
-    //     &__right
-    //         width: 50%
-    //         display: flex
-    //         flex-direction: column
-    //     &__icons  
-    //         display: flex
-    //         flex-direction: row
-    //         justify-content: flex-end    
-        
-            
-        
-    //     &__img
-    //         width: 40px
-        
-    //     &__navbar
-    //         position: sticky
-    //         top: 10px
-    //     &__nul
-    //         list-style: none
-    //         display: flex
-    //         flex-direction: row
-    //         justify-content: space-evenly
-    //         align-items: center   
-    //         height: 155px
-            
-            
-       
-            
-            
-    //         & a
-    //             text-decoration: none
-    //             color: #$white
-    //             font-size: 20px
-    //             text-shadow: 1px 1px $grey
-    //             &:hover
-    //                 border-bottom: 2px solid #$white
-
+    
     
 /**************** adress *****************/
 .main
@@ -226,7 +199,7 @@ a
     @media only screen and(max-width: 350px)
         margin-bottom: -170px
 footer
-    background-color: #706b6b
+    background-color: #9d9393cc
 
 .table-opening
     width: 60%

@@ -7,8 +7,35 @@
 }
 
 /**************** Reusable *****************/
+.myContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 a:hover, a:focus {
   color: #fff;
+}
+
+.noFocus {
+  color: #000 !important;
+}
+
+.justify {
+  text-align: justify !important;
+}
+
+.bg-second {
+  background-color: #43383836;
+}
+
+.textColorGreen {
+  color: #480;
+}
+
+@media only screen and (max-width: 500px) {
+  .mt2 {
+    margin-top: 20px;
+  }
 }
 
 /**************** Header *****************/
@@ -317,7 +344,7 @@ a:hover, a:focus {
 }
 
 footer {
-  background-color: #706b6b;
+  background-color: #9d9393cc;
 }
 
 .table-opening {

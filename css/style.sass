@@ -30,7 +30,13 @@ a
 .mt2
     @media only screen and(max-width: 500px)
         margin-top: 20px
-
+h2
+    &::after
+        content: ''
+        display: block
+        width: 150px
+        border-bottom: 3px solid $green
+        margin: 10px auto
     
 /**************** Header *****************/
 
@@ -79,7 +85,7 @@ a
         position: absolute
         right: 0
         height: $sectionAdressHeigh
-        width: 10%
+        width: 50%
         background-color: $grey
         @media only screen and(max-width: 1200px)
             height: $sectionAdressHeigh - 100px
@@ -202,7 +208,8 @@ footer
     background-color: #9d9393cc
 
 .table-opening
-    width: 60%
+    max-width: 600px;
+    margin: auto;
     // table-layout: fixed
 .socials a
     color: #000

@@ -38,6 +38,14 @@ a:hover, a:focus {
   }
 }
 
+h2::after {
+  content: '';
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #480;
+  margin: 10px auto;
+}
+
 /**************** Header *****************/
 @media only screen and (max-width: 991px) {
   .navbar-brand {
@@ -120,7 +128,7 @@ a:hover, a:focus {
   position: absolute;
   right: 0;
   height: 450px;
-  width: 10%;
+  width: 50%;
   background-color: #706b6b;
 }
 
@@ -348,7 +356,8 @@ footer {
 }
 
 .table-opening {
-  width: 60%;
+  max-width: 600px;
+  margin: auto;
 }
 
 .socials a {

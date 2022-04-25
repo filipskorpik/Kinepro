@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/**************** Reusable *****************/
+.myContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a:hover, a:focus {
+  color: #fff;
+}
+
+.noFocus {
+  color: #000 !important;
+}
+
+.justify {
+  text-align: justify !important;
+}
+
+.bg-second {
+  background-color: #43383836;
+}
+
+.textColorGreen {
+  color: #480;
+}
+
+@media only screen and (max-width: 500px) {
+  .mt2 {
+    margin-top: 20px;
+  }
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #480;
+  margin: 10px auto;
+}
+
+/**************** Header *****************/
+@media only screen and (max-width: 991px) {
+  .navbar-brand {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-brand {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .navbar-brand {
+    max-width: 160px;
+  }
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #fff;
+  text-decoration: underline;
+  padding-bottom: 0;
+}
+
+.header {
+  background-color: #480;
+  height: 162px;
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    height: 133px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    height: 120px;
+  }
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.header-nav__item {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.header-nav__item:hover, .header-nav__item:focus {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+/**************** adress *****************/
+.main {
+  margin-top: 50px;
+  position: relative;
+}
+
+.main-background {
+  position: absolute;
+  right: 0;
+  height: 450px;
+  width: 50%;
+  background-color: #706b6b;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-background {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .main-background {
+    height: 250px;
+    margin-top: 82px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-background {
+    margin-top: 70px;
+  }
+}
+
+.adress {
+  height: 450px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .adress {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.adress-left {
+  width: 40%;
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+  .adress-left {
+    width: 100%;
+  }
+}
+
+.adress-left__text {
+  color: #706b6b;
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 991px) {
+  .adress-left__text {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .adress-left__text {
+    font-size: 20px;
+  }
+}
+
+.adress-right {
+  width: 60%;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #706b6b;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  .adress-right {
+    width: 80%;
+    margin-left: 20%;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .adress-right {
+    width: 90%;
+    margin-left: 10%;
+  }
+}
+
+.adress-right__adress {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .adress-right__adress {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.adress-right__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adress-right__tel, .adress-right__mail {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 50px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .adress-right__tel, .adress-right__mail {
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .adress-right__tel, .adress-right__mail {
+    font-size: 30px;
+    padding-bottom: 0;
+  }
+}
+
+/**************** offer *****************/
+.offer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.7))), url(../images/cekarna.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(../images/cekarna.png);
+  background-image: url(../images/cekarna.png);
+  margin: 50px 0;
+  height: 500px;
+}
+
+.offer-block__text {
+  list-style-type: none;
+  color: #706b6b;
+}
+
+.offer-block__text p {
+  font-size: 23px;
+  padding-top: 25px;
+}
+
+.us {
+  margin: 50px 0;
+  background-color: #706b6b4d;
+}
+
+.mail {
+  text-decoration: none;
+  color: #000;
+}
+
+.mail:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.photos {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 610px) {
+  .photos {
+    margin-bottom: -10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .photos {
+    margin-bottom: -50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .photos {
+    margin-bottom: -100px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .photos {
+    margin-bottom: -150px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .photos {
+    margin-bottom: -170px;
+  }
+}
+
+footer {
+  background-color: #9d9393cc;
+}
+
+.table-opening {
+  max-width: 600px;
+  margin: auto;
+}
+
+.socials a {
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */

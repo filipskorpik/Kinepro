@@ -15,11 +15,11 @@
   <!--------- Header ------------>  
     <header class="header">
         <div class="container">
-            <ul class="header-nav mb-0">
-                <li><a href="#" title="Česky" id="lang0-cs" class="header-nav__item">CZ</a></li>
+            <ul class="header-nav mb-0 ">
+                <li><a href="#" title="Česky" id="lang0-cs" class="header-nav__item ">CZ</a></li>
                 <li><a href="#" title="Deutsch" id="lang3-de" class="header-nav__item">DE</a></li>
                 <li><a href="#" title="English" id="lang1-en" class="header-nav__item">ENG</a></li>
-                <li><a href="#" title="Русский" id="lang2-ru" class="header-nav__item">RU</a></li>
+                <li><a href="#" title="Русский" id="lang2-ru" class="header-nav__item ">RU</a></li>
             </ul>
                 
             <!-- bootstrap navbar -->
@@ -59,96 +59,68 @@
                 </div>
                 <div class="adress-right ">
                     <div class="adress-right__up">
-                        <a class="adress-right__adress" href="https://www.google.cz/maps/place/KM+KINEPRO+PLUS+s.r.o./@49.5759608,17.2292378,17z/data=!3m1!4b1!4m5!3m4!1s0x47124e46fb03da37:0xaa80983c5d363a6c!8m2!3d49.5759608!4d17.2314265" target="_blank">Horní lán 1328/6 <br> Nová Ulice <br> 779 00 Olomouc</a>
+                        <a title="Otevřít Google mapy" class="adress-right__adress" href="https://www.google.cz/maps/place/KM+KINEPRO+PLUS+s.r.o./@49.5759608,17.2292378,17z/data=!3m1!4b1!4m5!3m4!1s0x47124e46fb03da37:0xaa80983c5d363a6c!8m2!3d49.5759608!4d17.2314265" target="_blank">Horní lán 1328/6 <br> Nová Ulice <br> 779 00 Olomouc</a>
                     </div>
                     <div class="adress-right__down">
-                        <a class="adress-right__mail" href="mailto:info@kinepro.cz">info@kinepro.cz</a>
-                        <a href="tel:+420 583 034 715" class="adress-right__tel">+420 583 034 715</a>
+                        <a class="adress-right__mail" title="Napsat email" href="mailto:info@kinepro.cz">info@kinepro.cz</a>
+                        <a href="tel:+420583034715" title="Zavolat" class="adress-right__tel">+420 583 034 715</a>
                     </div>
                 </div>
                     
             </div>
         </section>
-<!--------- Offer 
-        </section>
-        <section class="offer">
-            <div class="container">
-                <div class="offer-block">
-                    <h2 class="offer-block__title">Nabízíme</h2>
-                    <ul class="offer-block__text">
-                        <li>
-                            <p>vyšetření psychomotorického vývoje dítěte</p>
-                        </li>
-                        <li>
-                            <p>vyšetření pohybových poruch dospělých</p>
-                        </li>
-                        <li>
-                            <p>návrh rehabilitačního plánu </p>
-                        </li>
-                        <li>
-                            <p>intenzivní rehabilitační pobyty</p>
-                        </li>
-                        <li>
-                            <p>konzultace terapie</p>
-                        </li>
-                        <li>
-                            <p>stáže a praxe studentů</p>
-                        </li>
-                    </ul>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-------------> 
+
+
         <section class="container">
             <div class="row">
                 <h2 class="text-center my-2 mt-5">Naše služby</h2>
                 <div class="col-sm-6 col-lg-4 p-2">
-                  <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                    <a href="#"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
+                  
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal1" class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                        <a href="#exampleModal1" ><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <h5 class="card-title">vyšetření psychomotorického vývoje dítěte</h5>
+                      <h5 class="card-title text-center">Vyšetření (konzultace?) psychomotorického vývoje dítěte</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 p-2">
-                    <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s"">
-                      <a href="#"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                      <a href="#exampleModal2"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <h5 class="card-title">vyšetření pohybových poruch dospělých</h5>
+                        <h5 class="card-title text-center">Vyšetření pohybových poruch dospělých</h5>
                       </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 p-2">
-                    <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s"">
-                      <a href="#"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                      <a href="#exampleModal3"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <h5 class="card-title">návrh rehabilitačního plánu</h5>
+                        <h5 class="card-title text-center">Terapie dětí a dospělých</h5>
                       </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 p-2">
-                    <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-                      <a href="#"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                      <a href="#exampleModal4"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <h5 class="card-title">intenzivní rehabilitační pobyty</h5>
+                        <h5 class="card-title text-center">Intenzivní rehabilitační pobyty</h5>
                       </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 p-2">
-                    <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1s"">
-                      <a href="#"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                      <a href="#exampleModal5"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <h5 class="card-title">konzultace terapie</h5>
+                        <h5 class="card-title text-center">Konzultace terapie</h5>
                       </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 p-2">
-                    <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1.2s"">
-                      <a href="#"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal6" class="card wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
+                      <a href="#exampleModal6"><img src="images/fyzio.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <h5 class="card-title">stáže a praxe studentů</h5>
+                        <h5 class="card-title text-center">Stáže a praxe studentů</h5>
                       </div>
                     </div>
                 </div>
@@ -228,11 +200,148 @@
             </div>
         </section>
     </main>
+
+
+    <!-- Modal start -->
+  
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vyšetření psychomotorického vývoje dítěte</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Dítě, které je od lékaře indikované k léčbě Vojtovou metodou se ujímá v naší ambulanci zkušený fyzioterapeut s nejvyšším vzdělání ve Vojtově metodě. Provede důkladné vyšetření motorických schopností a dovedností dítěte a seznámí rodiče s důvody, potřeby terapie motoriky. Na základě tohoto vyšetření stanoví hlavní motorický problém, který je potřeba ošetřit a společně s rodiči si určí cíl terapie.
+          </p>
+          <img src="images/fyzio.jpg" class="w-100" alt="">
+        </div>
+        <div class="modal-footer">
+            <a href="tel:+420583034715" class="btn btn-success">Objednat se</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vyšetření pohybových poruch dospělých</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+                vyšetření dospělých...
+          </p>
+          <img src="images/fyzio.jpg" class="w-100" alt="">
+        </div>
+        <div class="modal-footer">
+          <a href="tel:+420583034715" class="btn btn-success">Zavolejte nám</a>
+          <a href="mailto:info@kinepro.cz" class="btn btn-success">Napište nám</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Terapie dětí a dospělých</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Fyzioterapeut určí konkrétní léčebný postup. Terapii Vojtovou metodou v dětském věku je pro maximální efekt nutné provádět několikrát denně, podle věku dítěte a podle jeho individuálních potřeb. Proto se „terapeutem“ stává rodič, který s dítětem cvičí doma.
+            
+          </p>
+          <img src="images/fyzio.jpg" class="w-100" alt="">
+        </div>
+        <div class="modal-footer">
+          <a href="tel:+420583034715" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>  Zavolejte nám</a>
+          <a href="mailto:info@kinepro.cz" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg>&nbsp;&nbsp;Napište nám</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Intenzivní rehabilitační pobyty</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><br>
+            Pacientům, kteří přijíždějí z větší dálky (zejména ze zahraničí) nabízíme možnost terapie 2x denně po dobu až dvou týdnů.
+            Doporučíme ubytování...
+          </p>
+          <img src="images/fyzio.jpg" class="w-100" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Konzultace terapie</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Pro fyzioterapeuty, kteří pracují s pacienty Vojtovou metodou, nabízíme možnost konzultací zdravotního stavu a vedení terapie jejich pacienta. Při konzultaci výukový terapeut Vojtovy metody na našem pracovišti vyhodnotí průběh dosavadní rehabilitační léčby pacienta a jeho aktuální stav. Navrhne společně s terapeutem a pacientem další směřování fyzioterapeutické léčby. Součástí konzultace je praktické provedení terapeutické jednotky Vojtovou metodou.
+          </p>
+          <img src="images/fyzio.jpg" class="w-100" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Stáže a praxe studentů</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            V našem zařízení nabízíme možnost odborných stáží pro fyzioterapeuty, kteří pracují s pacienty Vojtovou metodu. Vzhledem k omezeným kapacitním možnostem, dostávají přednost absolventi certifikovaného kurzu Vojtovy metody, nebo fyzioterapeuti, kteří ho právě absolvují. Stáže umožňujeme rovněž studentům fyzioterapie, kteří mají o Vojtovu metodu zájem a chtějí si prohloubit znalosti oproti běžné školní výuce.
+          </p>
+          <img src="images/fyzio.jpg" class="w-100" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal end -->
+
     <footer>
         <div class="row">
             <div class="container" style="max-width: 1170px;">
-                .
-                <div class="table-opening mx-auto">
+                
+                <div class="table-opening mx-auto pt-3">
                     <table class="table table-striped text-center ">
                         <tbody>
                           <tr>

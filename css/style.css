@@ -12,7 +12,11 @@
   margin: 0 auto;
 }
 
-a:hover, a:focus {
+a:hover {
+  color: #fff;
+}
+
+a:focus {
   color: #fff;
 }
 
@@ -26,6 +30,10 @@ a:hover, a:focus {
 
 .bg-second {
   background-color: #43383836;
+}
+
+.bg-first {
+  background-color: #480;
 }
 
 .textColorGreen {
@@ -44,6 +52,11 @@ h2::after {
   width: 150px;
   border-bottom: 3px solid #480;
   margin: 10px auto;
+}
+
+.hover:hover {
+  -webkit-box-shadow: 0px 0px 32px 11px #480;
+          box-shadow: 0px 0px 32px 11px #480;
 }
 
 /**************** Header *****************/
@@ -93,6 +106,9 @@ h2::after {
 }
 
 .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

@@ -36,6 +36,37 @@ a:focus {
   background-color: #480;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #480;
+  border-color: #480;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 10px 0.25rem #480;
+          box-shadow: 0 0 10px 0.25rem #480;
+  background-color: #480;
+}
+
+.btn-primary:active {
+  -webkit-box-shadow: 0 0 0 0.25rem #480;
+          box-shadow: 0 0 0 0.25rem #480;
+  background-color: #480;
+}
+
+.btn-primary:checked {
+  -webkit-box-shadow: 0 0 0 0.25rem #480;
+          box-shadow: 0 0 0 0.25rem #480;
+  background-color: #480;
+}
+
+.btn-primary:hover {
+  -webkit-box-shadow: 0 0 10px 0.25rem #480;
+          box-shadow: 0 0 10px 0.25rem #480;
+  background-color: #480;
+  border-color: #480;
+}
+
 .textColorGreen {
   color: #480;
 }

@@ -35,12 +35,19 @@ a
     color: $white
     background-color: $green
     border-color: $green
-    ::focus
+    &:focus
+        box-shadow: 0 0 10px 0.25rem $green
+        background-color: $green
+    &:active
         box-shadow: 0 0 0 0.25rem $green
-    ::active
+        background-color: $green
+    &:checked
         box-shadow: 0 0 0 0.25rem $green
-    ::checked
-      box-shadow: 0 0 0 0.25rem $green
+        background-color: $green
+    &:hover
+        box-shadow: 0 0 10px 0.25rem $green
+        background-color: $green
+        border-color: $green
 
 .textColorGreen
     color: $green

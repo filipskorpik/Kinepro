@@ -1,10 +1,10 @@
 @import "variables"
 
-$sectionAdressHeigh: 450px
-$grey: #706b6b
-$green: #480
-$primary: #480
-$white: #fff
+// $sectionAdressHeigh: 450px
+// $grey: #706b6b
+// $green: #480
+// $primary: #480
+// $white: #fff
     
 *
     margin: 0
@@ -18,11 +18,9 @@ $white: #fff
     margin: 0 auto
 
 a
-    &:hover
+    &:hover, &:focus
         color: $white
-a    
-    &:focus
-        color: $white
+
 .noFocus
     color: #000!important
 .justify
@@ -35,17 +33,10 @@ a
     color: $white
     background-color: $green
     border-color: $green
-    &:focus
+    box-shadow: 0 0 10px 0.25rem transparent
+    &:focus, &:active, &:checked, &:hover
         box-shadow: 0 0 10px 0.25rem $green
-        background-color: $green
-    &:active
-        box-shadow: 0 0 0 0.25rem $green
-        background-color: $green
-    &:checked
-        box-shadow: 0 0 0 0.25rem $green
-        background-color: $green
-    &:hover
-        box-shadow: 0 0 10px 0.25rem $green
+        transition: 0.5s
         background-color: $green
         border-color: $green
 
@@ -62,8 +53,11 @@ h2
         border-bottom: 3px solid $green
         margin: 10px auto
 
-.hover:hover
-    box-shadow: 0px 0px 32px 11px $green
+.hover
+    box-shadow: 0px 0px 32px 0px transparent
+    &:hover
+        box-shadow: 0px 0px 32px 11px $green
+        transition: 0.7s
 
     
 /**************** Header *****************/

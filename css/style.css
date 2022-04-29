@@ -12,11 +12,7 @@
   margin: 0 auto;
 }
 
-a:hover {
-  color: #fff;
-}
-
-a:focus {
+a:hover, a:focus {
   color: #fff;
 }
 
@@ -40,29 +36,15 @@ a:focus {
   color: #fff;
   background-color: #480;
   border-color: #480;
+  -webkit-box-shadow: 0 0 10px 0.25rem transparent;
+          box-shadow: 0 0 10px 0.25rem transparent;
 }
 
-.btn-primary:focus {
+.btn-primary:focus, .btn-primary:active, .btn-primary:checked, .btn-primary:hover {
   -webkit-box-shadow: 0 0 10px 0.25rem #480;
           box-shadow: 0 0 10px 0.25rem #480;
-  background-color: #480;
-}
-
-.btn-primary:active {
-  -webkit-box-shadow: 0 0 0 0.25rem #480;
-          box-shadow: 0 0 0 0.25rem #480;
-  background-color: #480;
-}
-
-.btn-primary:checked {
-  -webkit-box-shadow: 0 0 0 0.25rem #480;
-          box-shadow: 0 0 0 0.25rem #480;
-  background-color: #480;
-}
-
-.btn-primary:hover {
-  -webkit-box-shadow: 0 0 10px 0.25rem #480;
-          box-shadow: 0 0 10px 0.25rem #480;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #480;
   border-color: #480;
 }
@@ -85,9 +67,16 @@ h2::after {
   margin: 10px auto;
 }
 
+.hover {
+  -webkit-box-shadow: 0px 0px 32px 0px transparent;
+          box-shadow: 0px 0px 32px 0px transparent;
+}
+
 .hover:hover {
   -webkit-box-shadow: 0px 0px 32px 11px #480;
           box-shadow: 0px 0px 32px 11px #480;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 /**************** Header *****************/
@@ -171,14 +160,14 @@ h2::after {
 .main-background {
   position: absolute;
   right: 0;
-  height: 450px;
+  height: 350px;
   width: 50%;
   background-color: #706b6b;
 }
 
 @media only screen and (max-width: 1200px) {
   .main-background {
-    height: 350px;
+    height: 250px;
   }
 }
 
@@ -196,12 +185,12 @@ h2::after {
 }
 
 .adress {
-  height: 450px;
+  height: 350px;
 }
 
 @media only screen and (max-width: 1200px) {
   .adress {
-    height: 350px;
+    height: 250px;
   }
 }
 

@@ -14,16 +14,16 @@
 <body>
   <!--------- Header ------------>  
     <header class="header">
-        <div class="container">
-            <ul class="header-nav mb-0 ">
-                <li><a href="#" title="Česky" id="lang0-cs" class="header-nav__item ">CZ</a></li>
-                <li><a href="#" title="Deutsch" id="lang3-de" class="header-nav__item">DE</a></li>
-                <li><a href="#" title="English" id="lang1-en" class="header-nav__item">ENG</a></li>
-                <li><a href="#" title="Русский" id="lang2-ru" class="header-nav__item ">RU</a></li>
-            </ul>
+          <div class="container">
+            <ul class="d-flex flex-row justify-content-end list-unstyled pt-2 mb-0">
+              <li><a href="#" title="Česky" id="lang0-cs" class="item">CZ</a></li>
+              <li><a href="#" title="Deutsch" id="lang3-de" class="item ms-3">DE</a></li>
+              <li><a href="#" title="English" id="lang1-en" class="item ms-3">ENG</a></li>
+              <li><a href="#" title="Русский" id="lang2-ru" class="item ms-3">RU</a></li>
+          </ul>
                 
             <!-- bootstrap navbar -->
-            <nav class="navbar navbar-expand-md sticky-top" style="z-index: 1100; background-color: #480;">
+            <nav class="navbar navbar-expand-md sticky-top">
                 <div class="container-fluid ">
                     <a href="index.html" class="navbar-brand"><img src="images/logo-kinepro-100.png" width="100%" alt="logo Kinepro"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -51,26 +51,26 @@
     <main>
        <!--------- adress  ------------>
         <section class="main">
-            <div class="main-background " data-wow-delay="0.43s" ></div>
-            
-            <div class="container adress d-flex position-relative">
-                <div class="adress-left">
-                    <strong class="adress-left__text">Fyzioterapie dětí a&nbsp;dospělých</strong>
+            <div class="main-background"></div>
+            <div class="container">
+              <div class="contact position-relative">
+                <div class="contact-left">
+                    <strong class="contact-left__text">Fyzioterapie dětí a&nbsp;dospělých</strong>
                 </div>
-                <div class="adress-right ">
-                    <div class="adress-right__up">
-                        <a title="Otevřít Google mapy" class="adress-right__adress" href="https://www.google.cz/maps/place/KM+KINEPRO+PLUS+s.r.o./@49.5759608,17.2292378,17z/data=!3m1!4b1!4m5!3m4!1s0x47124e46fb03da37:0xaa80983c5d363a6c!8m2!3d49.5759608!4d17.2314265" target="_blank">Horní lán 1328/6 <br>
+                <div class="contact-right ">
+                    <div class="contact-right__up">
+                        <a title="Otevřít Google mapy" class="contact-right__adress" href="https://www.google.cz/maps/place/KM+KINEPRO+PLUS+s.r.o./@49.5759608,17.2292378,17z/data=!3m1!4b1!4m5!3m4!1s0x47124e46fb03da37:0xaa80983c5d363a6c!8m2!3d49.5759608!4d17.2314265" target="_blank">Horní lán 1328/6 <br>
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                             <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                           </svg> Nová Ulice <br> 779 00 Olomouc</a>
                     </div>
-                    <div class="adress-right__down">
-                        <a class="adress-right__mail" title="Napsat email" href="mailto:info@kinepro.cz">info@kinepro.cz</a>
-                        <a href="tel:+420583034715" title="Zavolat" class="adress-right__tel">+420 583 034 715</a>
+                    <div class="contact-right__down">
+                        <a class="contact-right__mail" title="Napsat email" href="mailto:info@kinepro.cz">info@kinepro.cz</a>
+                        <a href="tel:+420583034715" title="Zavolat" class="contact-right__tel">+420 583 034 715</a>
                     </div>
                 </div>
-                    
+            </div>
             </div>
         </section>
 
@@ -140,7 +140,7 @@
                         <img src="images/mirek.jpg" class="card-img-top mt-2" alt="Mgr. Miroslav Kutín">
                         <div class="card-body text-center">
                         <h4 class="card-title">Mgr. Miroslav Kutín</h4>
-                        <p class="card-text ">výukový terapeut Vojtovy metody</p>
+                        <p class="card-text "><strong>výukový terapeut Vojtovy metody</strong></p>
                         <a class="card-text mail" href="mailto:>mirek.kutin@kinepro.cz">mirek.kutin@kinepro.cz</a>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                         <img src="images/eva.jpg" class="card-img-top mt-2" alt="Mgr. Eva Machačová">
                         <div class="card-body text-center">
                         <h4 class="card-title">Mgr. Eva Machačová</h4>
-                        <p class="card-text">výukový terapeut Vojtovy metody</p>
+                        <p class="card-text"><strong>výukový terapeut Vojtovy metody</strong></p>
                         <a class="card-text mail" href="mailto:>eva.machacova@kinepro.cz">eva.machacova@kinepro.cz</a>
                         </div>
                     </div>

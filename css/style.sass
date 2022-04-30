@@ -74,29 +74,25 @@ h2
         padding-bottom: 0
 
 .header
-    background-color: #480
+    background-color: $green
     height: 162px
     @media only screen and(max-width: 991px)
         height: 133px
     @media only screen and(max-width: 400px)
         height: 120px
-    &-nav
-        
-        display: flex
-        flex-direction: row
-        justify-content: flex-end  
-        list-style-type: none
-        padding-top: 10px
-        &__item
-            color: $white
-            text-decoration: none
-            margin-left: 15px
-            &:hover, &:focus
-                border-bottom: 2px solid $white
-                color: $white
+.item
+    color: $white
+    text-decoration: none
+    border-bottom: 2px solid transparent
+    transition: 0.5s
+    &:hover, &:focus
+        border-bottom: 2px solid $white
+        color: $white
     
-    
-/**************** adress *****************/
+.navbar
+    z-index: 1100
+    background-color: $green
+/**************** Contact *****************/
 .main
     margin-top: 50px
     position: relative
@@ -115,7 +111,9 @@ h2
             margin-top: 70px
         
    
-.adress
+.contact
+    display: flex
+    flex-direction: row
     height: $sectionAdressHeigh
     @media only screen and(max-width: 1200px)
         height: $sectionAdressHeigh - 100px
@@ -139,7 +137,6 @@ h2
                 
         
     &-right
-        
         width: 60%
         text-align: right
         display: flex
@@ -165,14 +162,13 @@ h2
                 margin-top: 0
                 margin-bottom: 20px
                 
-            
         &__down
            display: flex
            flex-direction: column 
         &__tel, &__mail
             text-decoration: none
             color: $white
-            font-weight: 600
+            font-weight: 700
             font-size: 50px
             padding-bottom: 20px
             letter-spacing: 1px
@@ -184,24 +180,7 @@ h2
                 font-size: 30px
                 padding-bottom: 0
         
-/**************** offer *****************/
-.offer
-    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.7)), url(../images/cekarna.png) 
-    background-image: url(../images/cekarna.png)
-    margin: 50px 0
-    height: 500px
-    &-block
-        
-        &__title
-
-        &__text
-            list-style-type: none
-            color: $grey
-            & p 
-                font-size: 23px
-                padding-top: 25px
-
-
+/**************** US *****************/
 .us
     margin: 50px 0
     background-color: #706b6b4d

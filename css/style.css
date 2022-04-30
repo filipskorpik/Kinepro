@@ -129,33 +129,25 @@ h2::after {
   }
 }
 
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  list-style-type: none;
-  padding-top: 10px;
-}
-
-.header-nav__item {
+.item {
   color: #fff;
   text-decoration: none;
-  margin-left: 15px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.header-nav__item:hover, .header-nav__item:focus {
+.item:hover, .item:focus {
   border-bottom: 2px solid #fff;
   color: #fff;
 }
 
-/**************** adress *****************/
+.navbar {
+  z-index: 1100;
+  background-color: #480;
+}
+
+/**************** Contact *****************/
 .main {
   margin-top: 50px;
   position: relative;
@@ -188,18 +180,25 @@ h2::after {
   }
 }
 
-.adress {
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 350px;
 }
 
 @media only screen and (max-width: 1200px) {
-  .adress {
+  .contact {
     height: 250px;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .adress {
+  .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -210,36 +209,36 @@ h2::after {
   }
 }
 
-.adress-left {
+.contact-left {
   width: 40%;
   background-color: #fff;
   padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 991px) {
-  .adress-left {
+  .contact-left {
     width: 100%;
   }
 }
 
-.adress-left__text {
+.contact-left__text {
   color: #706b6b;
   font-size: 35px;
 }
 
 @media only screen and (max-width: 991px) {
-  .adress-left__text {
+  .contact-left__text {
     font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .adress-left__text {
+  .contact-left__text {
     font-size: 20px;
   }
 }
 
-.adress-right {
+.contact-right {
   width: 60%;
   text-align: right;
   display: -webkit-box;
@@ -257,7 +256,7 @@ h2::after {
 }
 
 @media only screen and (max-width: 991px) {
-  .adress-right {
+  .contact-right {
     width: 80%;
     margin-left: 20%;
     height: 250px;
@@ -265,13 +264,13 @@ h2::after {
 }
 
 @media only screen and (max-width: 500px) {
-  .adress-right {
+  .contact-right {
     width: 90%;
     margin-left: 10%;
   }
 }
 
-.adress-right__adress {
+.contact-right__adress {
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -280,13 +279,13 @@ h2::after {
 }
 
 @media only screen and (max-width: 991px) {
-  .adress-right__adress {
+  .contact-right__adress {
     margin-top: 0;
     margin-bottom: 20px;
   }
 }
 
-.adress-right__down {
+.contact-right__down {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,17 +295,17 @@ h2::after {
           flex-direction: column;
 }
 
-.adress-right__tel, .adress-right__mail {
+.contact-right__tel, .contact-right__mail {
   text-decoration: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 50px;
   padding-bottom: 20px;
   letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 1200px) {
-  .adress-right__tel, .adress-right__mail {
+  .contact-right__tel, .contact-right__mail {
     font-size: 40px;
     padding-bottom: 10px;
     font-weight: 500;
@@ -314,31 +313,13 @@ h2::after {
 }
 
 @media only screen and (max-width: 991px) {
-  .adress-right__tel, .adress-right__mail {
+  .contact-right__tel, .contact-right__mail {
     font-size: 30px;
     padding-bottom: 0;
   }
 }
 
-/**************** offer *****************/
-.offer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.7))), url(../images/cekarna.png);
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7)), url(../images/cekarna.png);
-  background-image: url(../images/cekarna.png);
-  margin: 50px 0;
-  height: 500px;
-}
-
-.offer-block__text {
-  list-style-type: none;
-  color: #706b6b;
-}
-
-.offer-block__text p {
-  font-size: 23px;
-  padding-top: 25px;
-}
-
+/**************** US *****************/
 .us {
   margin: 50px 0;
   background-color: #706b6b4d;

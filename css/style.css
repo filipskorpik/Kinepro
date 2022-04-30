@@ -16,6 +16,10 @@ a:hover, a:focus {
   color: #fff;
 }
 
+strong {
+  font-weight: normal;
+}
+
 .noFocus {
   color: #000 !important;
 }

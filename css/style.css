@@ -169,7 +169,7 @@ h2::after {
 
 @media only screen and (max-width: 991px) {
   .main-background {
-    height: 250px;
+    height: 200px;
     margin-top: 82px;
   }
 }
@@ -302,6 +302,11 @@ h2::after {
   font-size: 50px;
   padding-bottom: 20px;
   letter-spacing: 1px;
+}
+
+.contact-right__tel:hover, .contact-right__mail:hover {
+  -webkit-text-decoration: underline 4px #480;
+          text-decoration: underline 4px #480;
 }
 
 @media only screen and (max-width: 1200px) {

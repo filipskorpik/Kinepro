@@ -18,9 +18,9 @@ a
 strong
     font-weight: normal
 .noFocus
-    color: #000!important
+    color: #000
 .justify
-    text-align: justify!important
+    text-align: justify
 .bg-second
     background-color: #43383836
 .bg-first
@@ -38,6 +38,10 @@ strong
 
 .textColorGreen
     color: $green
+    text-decoration: none
+    &:focus, &:active, &:checked, &:hover
+        color: $green
+        text-decoration: underline
 .mt2
     @media only screen and(max-width: 500px)
         margin-top: 20px
@@ -184,10 +188,6 @@ h2
 
 
 /**************** Services *****************/
-.VojtaMethod
-    color: $green
-    &:hover
-        color: #000
 
 
 

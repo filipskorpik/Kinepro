@@ -21,11 +21,11 @@ strong {
 }
 
 .noFocus {
-  color: #000 !important;
+  color: #000;
 }
 
 .justify {
-  text-align: justify !important;
+  text-align: justify;
 }
 
 .bg-second {
@@ -55,6 +55,12 @@ strong {
 
 .textColorGreen {
   color: #480;
+  text-decoration: none;
+}
+
+.textColorGreen:focus, .textColorGreen:active, .textColorGreen:checked, .textColorGreen:hover {
+  color: #480;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 500px) {
@@ -327,10 +333,12 @@ h2::after {
 /**************** Services *****************/
 .VojtaMethod {
   color: #480;
+  text-decoration: none;
 }
 
 .VojtaMethod:hover {
   color: #000;
+  text-decoration: underline;
 }
 
 /**************** US *****************/

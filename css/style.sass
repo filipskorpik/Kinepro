@@ -232,3 +232,16 @@ footer
     // table-layout: fixed
 .socials a
     color: #000
+
+// Pro pacienty
+.card-body
+    &__list
+        list-style-type: none
+    &__item
+        &::before 
+            content: "\2022"
+            color: $primary
+            font-weight: bold
+            display: inline-block
+            width: 1em
+            margin-left: -1em

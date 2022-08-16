@@ -337,8 +337,8 @@ h2::after {
 
 @media only screen and (max-width: 991px) {
   .contact-right__tel, .contact-right__mail {
-    font-size: 30px;
-    padding-bottom: 0;
+    font-size: 25px;
+    padding-bottom: 7.5px;
   }
 }
 

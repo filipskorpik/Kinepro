@@ -46,6 +46,8 @@ strong
 .mt2
     @media only screen and(max-width: 500px)
         margin-top: 20px
+.mt-5
+    margin-top: 165px !important
 h2
     &::after
         content: ''
@@ -107,13 +109,15 @@ h2
     background-color: $green
 /**************** Contact *****************/
 .main
-    margin-top: 70px
+    margin-top: 50px
     position: relative
     &-background
         position: absolute
         right: 0
+        top: 92.5px
+        border-radius: 20px 0 0 20px
         height: $sectionAdressHeigh
-        width: 50%
+        width: 57%
         background-color: $grey
         @media only screen and(max-width: 1200px)
             height: $sectionAdressHeigh - 100px
@@ -126,7 +130,7 @@ h2
    
 .contact
     display: flex
-    flex-direction: row
+    flex-direction: column
     height: $sectionAdressHeigh
     @media only screen and(max-width: 1200px)
         height: $sectionAdressHeigh - 100px
@@ -134,7 +138,7 @@ h2
         display: flex
         flex-direction: column
     &-left
-        width: 40%
+        width: 100%
         background-color: $white
         padding-bottom: 40px
         @media only screen and(max-width: 991px)
@@ -150,13 +154,15 @@ h2
                 
         
     &-right
-        width: 60%
+        // width: 60%
+        height: $sectionAdressHeigh
+        margin-left: 40%
         text-align: right
         display: flex
         justify-content: space-between
         flex-direction: column
-        background-color: $grey
-        border-radius: 10px
+        // background-color: $grey
+        // border-radius: 10px
         @media only screen and(max-width: 991px)
             width: 80%
             margin-left: 20%
@@ -171,6 +177,7 @@ h2
             display: inline-block
             margin-top: 20px
             font-size: 20px
+            margin-bottom: 63px
             @media only screen and(max-width: 991px)
                 margin-top: 0
                 margin-bottom: 20px
@@ -234,6 +241,10 @@ footer
     color: #000
 
 // Pro pacienty
+.card 
+    border-radius: 0.85rem
+    height: 98%
+    overflow: hidden
 .card-body
     &__list
         list-style-type: none

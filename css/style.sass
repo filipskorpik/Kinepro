@@ -36,7 +36,11 @@ strong
         transition: 0.5s
         background-color: $green
         border-color: $green
-
+.navbar-brand 
+    position: relative
+    top: -15px
+    @media only screen and(max-width: 500px)
+        top: 0
 .textColorGreen
     color: $green
     text-decoration: none
@@ -48,6 +52,8 @@ strong
         margin-top: 20px
 .mt-5
     margin-top: 165px !important
+    @media only screen and(max-width: 991px)
+        margin-top: 45px !important
 h2
     &::after
         content: ''
@@ -68,9 +74,38 @@ h2
     &:focus
         outline: 0
         box-shadow: 0 0 0 0.25rem rgba(68, 136, 0, .25)
-
-
-   
+.scroll-home
+    position: fixed
+    right: 34px
+    bottom: 50px
+    width: 50px
+    height: 50px
+    display: block
+    border-radius: 100%
+    background-color: #706b6b4d
+    display: none
+    
+    @media only screen and(max-width: 1150px)
+        right: 5px
+    @media only screen and(max-width: 991px)
+        right: 34px
+    @media only screen and(max-width: 400px)
+        right: 34px
+    @media only screen and(max-width: 340px)
+        right: 34px
+    img 
+        height: 80%
+        @media only screen and(max-width: 991px)
+            height: 80%
+        @media only screen and(max-width: 400px)
+            height: 80%
+        @media only screen and(max-width: 340px)
+            height: 80%
+    &__is-active
+        display: flex
+        justify-content: center
+        align-items: center
+    
 /**************** Header *****************/
 
 .navbar-brand
@@ -122,10 +157,12 @@ h2
         @media only screen and(max-width: 1200px)
             height: $sectionAdressHeigh -20px
         @media only screen and(max-width: 991px)
-            height: 200px
-            margin-top: 82px
+            height: 250px
+            margin-top: -11px
+            width: 70%
         @media only screen and(max-width: 500px)
-            margin-top: 70px
+            margin-top: -22px
+            width: 75%
         
    
 .contact
@@ -179,7 +216,7 @@ h2
             font-size: 20px
             margin-bottom: 63px
             @media only screen and(max-width: 991px)
-                margin-top: 0
+                margin-top: 10px
                 margin-bottom: 20px
                 
         &__down
@@ -193,7 +230,9 @@ h2
             padding-bottom: 20px
             letter-spacing: 1px
             &:hover
-                text-decoration: underline 4px  $green
+                color: $green
+                font-weight: 600
+                transition: .5s
             @media only screen and(max-width: 1200px)
                 font-size: 40px
                 padding-bottom: 10px
@@ -205,6 +244,12 @@ h2
 
 /**************** Services *****************/
 
+.card-body-hp 
+    flex: 1 1 auto
+    padding: 1rem 1rem
+    display: flex
+    align-items: center
+    justify-content: center
 
 
 

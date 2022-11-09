@@ -53,6 +53,17 @@ strong {
   border-color: #480;
 }
 
+.navbar-brand {
+  position: relative;
+  top: -15px;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar-brand {
+    top: 0;
+  }
+}
+
 .textColorGreen {
   color: #480;
   text-decoration: none;
@@ -71,6 +82,12 @@ strong {
 
 .mt-5 {
   margin-top: 165px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .mt-5 {
+    margin-top: 45px !important;
+  }
 }
 
 h2::after {
@@ -103,6 +120,76 @@ h2::after {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(68, 136, 0, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(68, 136, 0, 0.25);
+}
+
+.scroll-home {
+  position: fixed;
+  right: 34px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 100%;
+  background-color: #706b6b4d;
+  display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .scroll-home {
+    right: 5px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .scroll-home {
+    right: 34px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .scroll-home {
+    right: 34px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .scroll-home {
+    right: 34px;
+  }
+}
+
+.scroll-home img {
+  height: 80%;
+}
+
+@media only screen and (max-width: 991px) {
+  .scroll-home img {
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .scroll-home img {
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .scroll-home img {
+    height: 80%;
+  }
+}
+
+.scroll-home__is-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /**************** Header *****************/
@@ -193,14 +280,16 @@ h2::after {
 
 @media only screen and (max-width: 991px) {
   .main-background {
-    height: 200px;
-    margin-top: 82px;
+    height: 250px;
+    margin-top: -11px;
+    width: 70%;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .main-background {
-    margin-top: 70px;
+    margin-top: -22px;
+    width: 75%;
   }
 }
 
@@ -304,7 +393,7 @@ h2::after {
 
 @media only screen and (max-width: 991px) {
   .contact-right__adress {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 }
@@ -329,8 +418,10 @@ h2::after {
 }
 
 .contact-right__tel:hover, .contact-right__mail:hover {
-  -webkit-text-decoration: underline 4px #480;
-          text-decoration: underline 4px #480;
+  color: #480;
+  font-weight: 600;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -349,6 +440,22 @@ h2::after {
 }
 
 /**************** Services *****************/
+.card-body-hp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /**************** US *****************/
 .us {
   margin: 50px 0;

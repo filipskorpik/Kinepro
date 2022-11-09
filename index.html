@@ -14,7 +14,7 @@
 <body>
   
   <!--------- Header ------------>  
-    <header class="header">
+    <header class="header" id="header">
           <div class="container">
             <ul class="d-flex flex-row justify-content-end list-unstyled pt-2 mb-0">
               <li><a href="index.html" title="Česky" id="lang0-cs" class="item">CZ</a></li>
@@ -84,7 +84,7 @@
                   
                     <div data-bs-toggle="modal" data-bs-target="#exampleModal1" class="card hover wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                         <a href="#exampleModal1" ><img src="images/menu1VysDite.jpg" class="card-img-top" alt="Vyšetření psychomotorického vývoje dítěte"></a>
-                    <div class="card-body">
+                    <div class="card-body-hp">
                       <h5 class="card-title text-center">Vyšetření psychomotorického vývoje dítěte</h5>
                     </div>
                   </div>
@@ -92,7 +92,7 @@
                 <div class="col-sm-6 col-lg-4 p-2">
                     <div data-bs-toggle="modal" data-bs-target="#exampleModal2" class="card hover wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
                       <a href="#exampleModal2"><img src="images/diteVeVojotveTerapii.png" class="card-img-top" alt="Vyšetření pohybových poruch dospělých"></a>
-                      <div class="card-body">
+                      <div class="card-body-hp">
                         <h5 class="card-title text-center">Terapie dětí</h5>
                       </div>
                     </div>
@@ -100,7 +100,7 @@
                 <div class="col-sm-6 col-lg-4 p-2">
                     <div data-bs-toggle="modal" data-bs-target="#exampleModal3" class="card hover wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                       <a href="#exampleModal3"><img src="images/terapieDospelychVojtovouMetodou.jpg" class="card-img-top" alt="Terapie dětí a dospělých"></a>
-                      <div class="card-body">
+                      <div class="card-body-hp">
                         <h5 class="card-title text-center">Terapie a vyšetření pohybových poruch u&nbsp;dospělých </h5>
                       </div>
                     </div>
@@ -108,7 +108,7 @@
                 <div class="col-sm-6 col-lg-4 p-2">
                     <div data-bs-toggle="modal" data-bs-target="#exampleModal4" class="card hover wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
                       <a href="#exampleModal4"><img src="images/fyzio.jpg" class="card-img-top" alt="Intenzivní rehabilitační pobyty"></a>
-                      <div class="card-body">
+                      <div class="card-body-hp">
                         <h5 class="card-title text-center">Intenzivní rehabilitační pobyty</h5>
                       </div>
                     </div>
@@ -116,7 +116,7 @@
                 <div class="col-sm-6 col-lg-4 p-2">
                     <div data-bs-toggle="modal" data-bs-target="#exampleModal5" class="card hover wow animate__animated animate__fadeInUp" data-wow-delay="1s">
                       <a href="#exampleModal5"><img src="images/fyzio.jpg" class="card-img-top" alt="Konzultace terapie"></a>
-                      <div class="card-body">
+                      <div class="card-body-hp">
                         <h5 class="card-title text-center">Konzultace terapie</h5>
                       </div>
                     </div>
@@ -124,7 +124,7 @@
                 <div class="col-sm-6 col-lg-4 p-2">
                     <div data-bs-toggle="modal" data-bs-target="#exampleModal6" class="card hover wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
                       <a href="#exampleModal6"><img src="images/staze.jpg" class="card-img-top" alt="Stáže a praxe studentů"></a>
-                      <div class="card-body">
+                      <div class="card-body-hp">
                         <h5 class="card-title text-center">Stáže a praxe studentů</h5>
                       </div>
                     </div>
@@ -433,15 +433,17 @@
   </div>
 </footer>
 
-
+<a href="#header" class="scroll-home">
+  <img src="images/angle-double-up-solid.svg"  alt="Kontakt" title="Kontakt">
+  
+</a>
 
 
 <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <script src="js/main.js"></script>
+    
 
 </body>
 </html>

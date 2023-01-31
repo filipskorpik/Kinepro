@@ -30,7 +30,7 @@ strong
     color: $white
     background-color: $green
     border-color: $green
-    box-shadow: 0 0 10px 0.25rem transparent
+    box-shadow: 0 0 10px 0.25rem transparent 
     &:focus, &:active, &:checked, &:hover
         box-shadow: 0 0 10px 0.25rem $green
         transition: 0.5s
@@ -51,9 +51,9 @@ strong
     @media only screen and(max-width: 500px)
         margin-top: 20px
 .mt-5
-    margin-top: 165px !important
+    margin-top: 125px !important
     @media only screen and(max-width: 991px)
-        margin-top: 45px !important
+        margin-top: 89px !important
 h2
     &::after
         content: ''
@@ -144,7 +144,7 @@ h2
     background-color: $green
 /**************** Contact *****************/
 .main
-    margin-top: 50px
+    margin-top: 20px
     position: relative
     &-background
         position: absolute
@@ -157,11 +157,11 @@ h2
         @media only screen and(max-width: 1200px)
             height: $sectionAdressHeigh -20px
         @media only screen and(max-width: 991px)
-            height: 250px
-            margin-top: -11px
+            height: 210px
+            top: 124px
             width: 70%
         @media only screen and(max-width: 500px)
-            margin-top: -22px
+            margin-top: -32px
             width: 75%
         
    
@@ -180,14 +180,20 @@ h2
         padding-bottom: 40px
         @media only screen and(max-width: 991px)
             width: 100%
+            padding-bottom: 0
+            height: 80px
+        @media only screen and(max-width: 500px)
+            height: 80px
         
         &__text
             color: $grey
             font-size: 35px
             @media only screen and(max-width: 991px)
-                font-size: 28px
+                font-size: 23px
             @media only screen and(max-width: 500px)
                 font-size: 20px
+                height: 52px
+                display: block
                 
         
     &-right
@@ -214,10 +220,12 @@ h2
             display: inline-block
             margin-top: 20px
             font-size: 20px
-            margin-bottom: 63px
+            margin-bottom: 24px
             @media only screen and(max-width: 991px)
-                margin-top: 10px
+                margin-top: 90px
                 margin-bottom: 20px
+            @media only screen and(max-width: 500px)
+                margin-top: 53px
                 
         &__down
            display: flex
@@ -226,8 +234,8 @@ h2
             text-decoration: none
             color: $white
             font-weight: 700
-            font-size: 50px
-            padding-bottom: 20px
+            font-size: 40px
+            //padding-bottom: 20px
             letter-spacing: 1px
             &:hover
                 color: $green

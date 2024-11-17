@@ -457,6 +457,21 @@ h2::after {
   justify-content: center;
 }
 
+/* .card-body a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card-title {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #000;
+  }
+} */
+
 /**************** US *****************/
 .us {
   margin: 50px 0;
@@ -466,6 +481,10 @@ h2::after {
 .mail {
   text-decoration: none;
   color: #000;
+
+  &:focus {
+    color: #000;
+  }
 }
 
 .mail:hover {

@@ -1,8 +1,15 @@
+:root {
+  --sectionAdressHeigh: 270px;
+  --grey: #706b6b;
+  --green: #480;
+  --primary: #480;
+  --white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,8 +19,9 @@
   margin: 0 auto;
 }
 
-a:hover, a:focus {
-  color: #fff;
+a:hover,
+a:focus {
+  color: var(--white);
 }
 
 strong {
@@ -33,24 +41,24 @@ strong {
 }
 
 .bg-first {
-  background-color: #480;
+  background-color: var(--green);
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #480;
-  border-color: #480;
-  -webkit-box-shadow: 0 0 10px 0.25rem transparent;
-          box-shadow: 0 0 10px 0.25rem transparent;
+  color: var(--white);
+  background-color: var(--green);
+  border-color: var(--green);
+  box-shadow: 0 0 10px 0.25rem transparent;
 }
 
-.btn-primary:focus, .btn-primary:active, .btn-primary:checked, .btn-primary:hover {
-  -webkit-box-shadow: 0 0 10px 0.25rem #480;
-          box-shadow: 0 0 10px 0.25rem #480;
-  -webkit-transition: 0.5s;
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:checked,
+.btn-primary:hover {
+  box-shadow: 0 0 10px 0.25rem var(--green);
   transition: 0.5s;
-  background-color: #480;
-  border-color: #480;
+  background-color: var(--green);
+  border-color: var(--green);
 }
 
 .navbar-brand {
@@ -65,13 +73,20 @@ strong {
 }
 
 .textColorGreen {
-  color: #480;
+  color: var(--green);
   text-decoration: none;
 }
 
-.textColorGreen:focus, .textColorGreen:active, .textColorGreen:checked, .textColorGreen:hover {
-  color: #480;
+.textColorGreen:focus,
+.textColorGreen:active,
+.textColorGreen:checked,
+.textColorGreen:hover {
+  color: var(--green);
   text-decoration: underline;
+}
+
+.mt2 {
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -94,32 +109,27 @@ h2::after {
   content: '';
   display: block;
   width: 150px;
-  border-bottom: 3px solid #480;
+  border-bottom: 3px solid var(--green);
   margin: 10px auto;
 }
 
 .hover {
-  -webkit-box-shadow: 0px 0px 32px 0px transparent;
-          box-shadow: 0px 0px 32px 0px transparent;
+  box-shadow: 0px 0px 32px 0px transparent;
 }
 
 .hover:hover {
-  -webkit-box-shadow: 0px 0px 32px 11px #480;
-          box-shadow: 0px 0px 32px 11px #480;
-  -webkit-transition: 0.7s;
+  box-shadow: 0px 0px 32px 1px var(--grey);
   transition: 0.7s;
 }
 
 .underline-primary {
   text-decoration: underline;
-  -webkit-text-decoration-color: #480;
-          text-decoration-color: #480;
+  text-decoration-color: var(--green);
 }
 
 .underline-primary:focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(68, 136, 0, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(68, 136, 0, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(68, 136, 0, .25);
 }
 
 .scroll-home {
@@ -181,18 +191,17 @@ h2::after {
 }
 
 .scroll-home__is-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /**************** Header *****************/
+
+/* .navbar-brand {
+  max-width: 250px;
+} */
+
 @media only screen and (max-width: 991px) {
   .navbar-brand {
     max-width: 250px;
@@ -212,17 +221,18 @@ h2::after {
 }
 
 .nav-link {
-  color: #fff;
+  color: var(--white);
 }
 
-.nav-link:hover, .nav-link:focus {
-  color: #fff;
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--white);
   text-decoration: underline;
   padding-bottom: 0;
 }
 
 .header {
-  background-color: #480;
+  background-color: var(--green);
   height: 162px;
 }
 
@@ -239,21 +249,21 @@ h2::after {
 }
 
 .item {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.item:hover, .item:focus {
-  border-bottom: 2px solid #fff;
-  color: #fff;
+.item:hover,
+.item:focus {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
 }
 
 .navbar {
-  z-index: 1100;
-  background-color: #480;
+  z-index: 1050;
+  background-color: var(--green);
 }
 
 /**************** Contact *****************/
@@ -267,14 +277,14 @@ h2::after {
   right: 0;
   top: 92.5px;
   border-radius: 20px 0 0 20px;
-  height: 270px;
+  height: var(--sectionAdressHeigh);
   width: 57%;
-  background-color: #706b6b;
+  background-color: var(--grey);
 }
 
 @media only screen and (max-width: 1200px) {
   .main-background {
-    height: 270px -20px;
+    height: calc(var(--sectionAdressHeigh) - 20px);
   }
 }
 
@@ -294,37 +304,27 @@ h2::after {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 270px;
+  flex-direction: column;
+  height: var(--sectionAdressHeigh);
 }
 
 @media only screen and (max-width: 1200px) {
   .contact {
-    height: 270px -20px;
+    height: calc(var(--sectionAdressHeigh) - 20px);
   }
 }
 
 @media only screen and (max-width: 991px) {
   .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .contact-left {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   padding-bottom: 40px;
 }
 
@@ -343,7 +343,7 @@ h2::after {
 }
 
 .contact-left__text {
-  color: #706b6b;
+  color: var(--grey);
   font-size: 35px;
 }
 
@@ -362,19 +362,12 @@ h2::after {
 }
 
 .contact-right {
-  height: 270px;
+  height: var(--sectionAdressHeigh);
   margin-left: 40%;
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 991px) {
@@ -394,7 +387,7 @@ h2::after {
 
 .contact-right__adress {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   display: inline-block;
   margin-top: 20px;
   font-size: 20px;
@@ -415,61 +408,69 @@ h2::after {
 }
 
 .contact-right__down {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
-.contact-right__tel, .contact-right__mail {
+.contact-right__tel,
+.contact-right__mail {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 1px;
 }
 
-.contact-right__tel:hover, .contact-right__mail:hover {
-  color: #480;
+.contact-right__tel:hover,
+.contact-right__mail:hover {
+  color: var(--green);
   font-weight: 600;
-  -webkit-transition: .5s;
   transition: .5s;
 }
 
 @media only screen and (max-width: 1200px) {
-  .contact-right__tel, .contact-right__mail {
+
+  .contact-right__tel,
+  .contact-right__mail {
     font-size: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     font-weight: 500;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .contact-right__tel, .contact-right__mail {
+
+  .contact-right__tel,
+  .contact-right__mail {
     font-size: 25px;
     padding-bottom: 7.5px;
   }
 }
 
 /**************** Services *****************/
+
 .card-body-hp {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: 1rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
+
+/* .card-body a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card-title {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #000;
+  }
+} */
 
 /**************** US *****************/
 .us {
@@ -480,6 +481,10 @@ h2::after {
 .mail {
   text-decoration: none;
   color: #000;
+
+  &:focus {
+    color: #000;
+  }
 }
 
 .mail:hover {
@@ -534,6 +539,7 @@ footer {
   color: #000;
 }
 
+/**************** Pro pacienty *****************/
 .card {
   border-radius: 0.85rem;
   height: 98%;
@@ -546,10 +552,9 @@ footer {
 
 .card-body__item::before {
   content: "\2022";
-  color: #480;
+  color: var(--primary);
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
-/*# sourceMappingURL=style.css.map */

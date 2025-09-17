@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kinepro.cz/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Disallow certain file types
+Disallow: *.css
+Disallow: *.js
+Disallow: *.png
+Disallow: *.jpg
+Disallow: *.jpeg
+Disallow: *.gif
+Disallow: *.svg
+Disallow: *.ico
+Disallow: *.pdf
+
+# Allow important directories
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Block access to admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/

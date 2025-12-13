@@ -558,3 +558,7 @@ footer {
   width: 1em;
   margin-left: -1em;
 }
+
+.modal-dialog.modal-wide {
+  max-width: 1000px;
+}

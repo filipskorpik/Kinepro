@@ -204,31 +204,31 @@
       <div class="container">
         <div class="row d-flex justify-content-evenly">
           <h2 class="text-center mb-4">Наша команда</h2>
-          <div class="card border-success m-1 animate__animated wow animate__fadeInLeft" style="width: 22rem;">
+          <div class="card border-success m-1 animate__animated wow animate__fadeInLeft" style="width: 22rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#teamModal1">
             <img src="../images/mirek.jpg" class="card-img-top mt-2" alt="Mgr. Miroslav Kutín">
             <div class="card-body text-center">
               <h4 class="card-title">Mgr. Miroslav Kutín</h4>
               <p class="card-text"><strong>фізіотерапевт</strong></p>
               <p class="card-text "><strong>Терапевт-лектор з Войта терапії</strong></p>
-              <a class="card-text mail" href="mailto:mirek.kutin@kinepro.cz">mirek.kutin@kinepro.cz</a>
+              <a class="card-text mail" href="mailto:mirek.kutin@kinepro.cz" onclick="event.stopPropagation();">mirek.kutin@kinepro.cz</a>
             </div>
           </div>
-          <div class="card border-success m-1 animate__animated wow animate__fadeInUp" style="width: 22rem;">
+          <div class="card border-success m-1 animate__animated wow animate__fadeInUp" style="width: 22rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#teamModal2">
             <img src="../images/eva.jpg" class="card-img-top mt-2" alt="Mgr. Eva Machačová">
             <div class="card-body text-center">
               <h4 class="card-title">Mgr. Eva Machačová</h4>
               <p class="card-text"><strong>фізіотерапевт</strong></p>
               <p class="card-text"><strong>Терапевт-лектор з Войта терапії</strong></p>
-              <a class="card-text mail" href="mailto:eva.machacova@kinepro.cz">eva.machacova@kinepro.cz</a>
+              <a class="card-text mail" href="mailto:eva.machacova@kinepro.cz" onclick="event.stopPropagation();">eva.machacova@kinepro.cz</a>
             </div>
           </div>
-          <div class="card border-success m-1 animate__animated wow animate__fadeInRight" style="width: 22rem;">
+          <div class="card border-success m-1 animate__animated wow animate__fadeInRight" style="width: 22rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#teamModal3">
             <img src="../images/aneta_ruska.jpg" class="card-img-top mt-2" alt="Mgr. Aneta Ruská">
             <div class="card-body text-center">
               <h4 class="card-title">Mgr. Aneta Ruská</h4>
               <p class="card-text"><strong>фізіотерапевт</strong></p>
               <p class="card-text"><strong> <br/></strong></p>
-              <a class="card-text mail" href="mailto:aneta.ruska@kinepro.cz">aneta.ruska@kinepro.cz</a>
+              <a class="card-text mail" href="mailto:aneta.ruska@kinepro.cz" onclick="event.stopPropagation();">aneta.ruska@kinepro.cz</a>
             </div>
           </div>
 
@@ -681,6 +681,177 @@
       </div>
     </div>
   </div>
+
+  <!-- Team Modals -->
+  <div class="modal fade" id="teamModal1" tabindex="-1" aria-labelledby="teamModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-wide">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8">
+              <h4 class="mb-4">Mgr. Miroslav KUTÍN</h4>
+              
+              <h5 class="mb-3">Освіта:</h5>
+              <ul class="mb-4">
+                <li>1997 FTK UP Olomouc, магістерська програма – фізіотерапія</li>
+              </ul>
+              
+              <h5 class="mb-3">Додаткова освіта:</h5>
+              <ul class="mb-4">
+                <li>1998 Сертифікат терапевта методу Войта</li>
+                <li>2005 Сертифікат терапевта-лектора методу Войта (лектор Міжнародного товариства Войта)</li>
+                <li>2008 Курс Розвивальна кінезіологія в мануальній медицині</li>
+                <li>2017 Курс Фізіотерапія при порушеннях дихання у дітей та дорослих</li>
+                <li>2023 Курс Діагностика та терапія запаморочення</li>
+              </ul>
+              
+              <h5 class="mb-3">Досвід роботи:</h5>
+              <ul class="mb-0">
+                <li>1996 – 2014 RL-Corpus Olomouc, фізіотерапевт</li>
+                <li>2014 - KM KINEPRO PLUS s.r.o., фізіотерапевт, директор</li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="../images/mirek.jpg" class="img-fluid rounded mb-3" alt="Mgr. Miroslav Kutín">
+              <div>
+                <a href="mailto:mirek.kutin@kinepro.cz" class="text-success text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="vertical-align: -2px;">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                  mirek.kutin@kinepro.cz
+                </a>
+                <button type="button" class="btn btn-sm btn-outline-success ms-2" onclick="copyEmail('mirek.kutin@kinepro.cz', this)" title="Скопіювати email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="teamModal2" tabindex="-1" aria-labelledby="teamModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-wide">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8">
+              <h4 class="mb-4">Mgr. Eva MACHAČOVÁ</h4>
+              
+              <h5 class="mb-3">Освіта:</h5>
+              <ul class="mb-4">
+                <li>1998 LF UP Olomouc, бакалаврська програма - фізіотерапія</li>
+                <li>2000 FTK UP Olomouc, магістерська програма – фізіотерапія</li>
+              </ul>
+              
+              <h5 class="mb-3">Додаткова освіта:</h5>
+              <ul class="mb-4">
+                <li>2004 Сертифікат терапевта методу Войта</li>
+                <li>2011 Сертифікат терапевта-лектора методу Войта (лектор Міжнародного товариства Войта)</li>
+                <li>2024 Курс DNS</li>
+              </ul>
+              
+              <h5 class="mb-3">Досвід роботи:</h5>
+              <ul class="mb-0">
+                <li>2000 – 2014 RL-Corpus Olomouc, фізіотерапевт</li>
+                <li>2014 - KM KINEPRO PLUS s.r.o., фізіотерапевт, директор</li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="../images/eva.jpg" class="img-fluid rounded mb-3" alt="Mgr. Eva Machačová">
+              <div>
+                <a href="mailto:eva.machacova@kinepro.cz" class="text-success text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="vertical-align: -2px;">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                  eva.machacova@kinepro.cz
+                </a>
+                <button type="button" class="btn btn-sm btn-outline-success ms-2" onclick="copyEmail('eva.machacova@kinepro.cz', this)" title="Скопіювати email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="teamModal3" tabindex="-1" aria-labelledby="teamModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-wide">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8">
+              <h4 class="mb-4">Mgr. Aneta RUSKÁ</h4>
+              
+              <h5 class="mb-3">Освіта:</h5>
+              <ul class="mb-4">
+                <li>2024 FTK UP Olomouc, магістерська програма – фізіотерапія</li>
+              </ul>
+              
+              <h5 class="mb-3">Додаткова освіта:</h5>
+              <ul class="mb-4">
+                <li>2025 Курс Вісцеровертебральні відносини та їх використання в клінічній практиці</li>
+                <li>2025 Курс Мобілізація в контексті м'язових ланцюгів</li>
+                <li>2026 Сертифікат терапевта методу Войта</li>
+              </ul>
+              
+              <h5 class="mb-3">Досвід роботи:</h5>
+              <ul class="mb-0">
+                <li>2022 – 2023 Department of Athletic training, Moravian University, Пенсільванія, США</li>
+                <li>2023 Department of Sport Science, University of Lincoln, Лінкольн, Великобританія</li>
+                <li>2024 - KM KINEPRO PLUS s.r.o., фізіотерапевт</li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="../images/aneta_ruska.jpg" class="img-fluid rounded mb-3" alt="Mgr. Aneta Ruská">
+              <div>
+                <a href="mailto:aneta.ruska@kinepro.cz" class="text-success text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="vertical-align: -2px;">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                  aneta.ruska@kinepro.cz
+                </a>
+                <button type="button" class="btn btn-sm btn-outline-success ms-2" onclick="copyEmail('aneta.ruska@kinepro.cz', this)" title="Скопіювати email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal end -->
 
   <!-- Footer -->
@@ -757,6 +928,24 @@
     crossorigin="anonymous"></script>
   <script src="../js/wow.min.js"></script>
   <script src="../js/main.js"></script>
+  <script>
+    function copyEmail(email, button) {
+      navigator.clipboard.writeText(email).then(function() {
+        const originalHTML = button.innerHTML;
+        button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/></svg>';
+        button.classList.remove('btn-outline-success');
+        button.classList.add('btn-success');
+        setTimeout(function() {
+          button.innerHTML = originalHTML;
+          button.classList.remove('btn-success');
+          button.classList.add('btn-outline-success');
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Помилка копіювання:', err);
+        alert('Не вдалося скопіювати email. Спробуйте ще раз.');
+      });
+    }
+  </script>
 
 </body>
 

@@ -5,7 +5,7 @@
   <!-- Main Czech pages -->
   <url>
     <loc>https://kinepro.cz/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/" />
@@ -17,18 +17,40 @@
   
   <url>
     <loc>https://kinepro.cz/proPacienty.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://kinepro.cz/VojtovaMetoda.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
+  <!-- Articles (Czech only) -->
+  <url>
+    <loc>https://kinepro.cz/clanky/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/clanky/vojtova-metoda-u-kojencu.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/clanky/psychomotoricky-vyvoj-ditete.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- English pages -->
   <url>
     <loc>https://kinepro.cz/eng/</loc>

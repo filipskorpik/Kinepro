@@ -29,26 +29,43 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Articles (Czech only) -->
+  <!-- Articles landing (CS) -->
   <url>
     <loc>https://kinepro.cz/clanky/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/" />
   </url>
 
+  <!-- Article: Vojta method in infants (CS) -->
   <url>
     <loc>https://kinepro.cz/clanky/vojtova-metoda-u-kojencu.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/vojtova-metoda-u-kojencu.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/vojta-method-in-infants.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/vojta-methode-bei-saeuglingen.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/metod-voyty-u-mladencev.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/metod-voyta-u-nemovlyat.html" />
   </url>
 
+  <!-- Article: psychomotor development (CS) -->
   <url>
     <loc>https://kinepro.cz/clanky/psychomotoricky-vyvoj-ditete.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/psychomotoricky-vyvoj-ditete.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/childs-psychomotor-development.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/psychomotorische-entwicklung-des-kindes.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/psihomotornoe-razvitie-rebenka.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/psyhomotornyy-rozvytok-dytyny.html" />
   </url>
 
   <!-- English pages -->
@@ -78,6 +95,43 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- English articles -->
+  <url>
+    <loc>https://kinepro.cz/eng/clanky/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/eng/clanky/vojta-method-in-infants.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/vojtova-metoda-u-kojencu.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/vojta-method-in-infants.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/vojta-methode-bei-saeuglingen.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/metod-voyty-u-mladencev.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/metod-voyta-u-nemovlyat.html" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/eng/clanky/childs-psychomotor-development.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/psychomotoricky-vyvoj-ditete.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/childs-psychomotor-development.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/psychomotorische-entwicklung-des-kindes.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/psihomotornoe-razvitie-rebenka.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/psyhomotornyy-rozvytok-dytyny.html" />
+  </url>
+
   <!-- German pages -->
   <url>
     <loc>https://kinepro.cz/de/</loc>
@@ -105,6 +159,43 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- German articles -->
+  <url>
+    <loc>https://kinepro.cz/de/clanky/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/de/clanky/vojta-methode-bei-saeuglingen.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/vojtova-metoda-u-kojencu.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/vojta-method-in-infants.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/vojta-methode-bei-saeuglingen.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/metod-voyty-u-mladencev.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/metod-voyta-u-nemovlyat.html" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/de/clanky/psychomotorische-entwicklung-des-kindes.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/psychomotoricky-vyvoj-ditete.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/childs-psychomotor-development.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/psychomotorische-entwicklung-des-kindes.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/psihomotornoe-razvitie-rebenka.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/psyhomotornyy-rozvytok-dytyny.html" />
+  </url>
+
   <!-- Russian pages -->
   <url>
     <loc>https://kinepro.cz/ru/</loc>
@@ -132,6 +223,43 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- Russian articles -->
+  <url>
+    <loc>https://kinepro.cz/ru/clanky/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/ru/clanky/metod-voyty-u-mladencev.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/vojtova-metoda-u-kojencu.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/vojta-method-in-infants.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/vojta-methode-bei-saeuglingen.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/metod-voyty-u-mladencev.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/metod-voyta-u-nemovlyat.html" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/ru/clanky/psihomotornoe-razvitie-rebenka.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/psychomotoricky-vyvoj-ditete.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/childs-psychomotor-development.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/psychomotorische-entwicklung-des-kindes.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/psihomotornoe-razvitie-rebenka.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/psyhomotornyy-rozvytok-dytyny.html" />
+  </url>
+
   <!-- Ukrainian pages -->
   <url>
     <loc>https://kinepro.cz/ukr/</loc>
@@ -158,5 +286,42 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+
+  <!-- Ukrainian articles -->
+  <url>
+    <loc>https://kinepro.cz/ukr/clanky/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/ukr/clanky/metod-voyta-u-nemovlyat.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/vojtova-metoda-u-kojencu.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/vojta-method-in-infants.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/vojta-methode-bei-saeuglingen.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/metod-voyty-u-mladencev.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/metod-voyta-u-nemovlyat.html" />
+  </url>
+
+  <url>
+    <loc>https://kinepro.cz/ukr/clanky/psyhomotornyy-rozvytok-dytyny.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://kinepro.cz/clanky/psychomotoricky-vyvoj-ditete.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinepro.cz/eng/clanky/childs-psychomotor-development.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kinepro.cz/de/clanky/psychomotorische-entwicklung-des-kindes.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kinepro.cz/ru/clanky/psihomotornoe-razvitie-rebenka.html" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kinepro.cz/ukr/clanky/psyhomotornyy-rozvytok-dytyny.html" />
+  </url>
+
 </urlset>

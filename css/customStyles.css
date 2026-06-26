@@ -1,5 +1,5 @@
 :root {
-  --sectionAdressHeigh: 270px;
+  --sectionAdressHeigh: 215px;
   --grey: #706b6b;
   --green: #480;
   --primary: #480;
@@ -278,28 +278,28 @@ h2::after {
   top: 92.5px;
   border-radius: 20px 0 0 20px;
   height: var(--sectionAdressHeigh);
-  width: 57%;
+  width: 40%;
   background-color: var(--grey);
 }
 
 @media only screen and (max-width: 1200px) {
   .main-background {
-    height: calc(var(--sectionAdressHeigh) - 20px);
+    height: calc(var(--sectionAdressHeigh) - 5px);
   }
 }
 
 @media only screen and (max-width: 991px) {
   .main-background {
-    height: 210px;
+    height: 195px;
     top: 124px;
-    width: 70%;
+    width: 64%;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .main-background {
     margin-top: -32px;
-    width: 75%;
+    width: 70%;
   }
 }
 
@@ -311,7 +311,7 @@ h2::after {
 
 @media only screen and (max-width: 1200px) {
   .contact {
-    height: calc(var(--sectionAdressHeigh) - 20px);
+    height: calc(var(--sectionAdressHeigh) - 5px);
   }
 }
 
@@ -319,6 +319,7 @@ h2::after {
   .contact {
     display: flex;
     flex-direction: column;
+    height: 245px;
   }
 }
 
@@ -374,7 +375,7 @@ h2::after {
   .contact-right {
     width: 80%;
     margin-left: 20%;
-    height: 250px;
+    height: 195px;
   }
 }
 
@@ -389,21 +390,21 @@ h2::after {
   text-decoration: none;
   color: var(--white);
   display: inline-block;
-  margin-top: 20px;
-  font-size: 20px;
-  margin-bottom: 24px;
+  margin-top: 16px;
+  font-size: 18px;
+  margin-bottom: 14px;
 }
 
 @media only screen and (max-width: 991px) {
   .contact-right__adress {
-    margin-top: 90px;
-    margin-bottom: 20px;
+    margin-top: 88px;
+    margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .contact-right__adress {
-    margin-top: 53px;
+    margin-top: 40px;
   }
 }
 
@@ -417,7 +418,7 @@ h2::after {
   text-decoration: none;
   color: var(--white);
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: 1px;
 }
 
@@ -432,7 +433,7 @@ h2::after {
 
   .contact-right__tel,
   .contact-right__mail {
-    font-size: 40px;
+    font-size: 32px;
     padding-bottom: 0px;
     font-weight: 500;
   }
@@ -442,8 +443,24 @@ h2::after {
 
   .contact-right__tel,
   .contact-right__mail {
-    font-size: 25px;
-    padding-bottom: 7.5px;
+    font-size: 19px;
+    padding-bottom: 6px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .contact-right__tel,
+  .contact-right__mail {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+
+  .contact-right__tel,
+  .contact-right__mail {
+    font-size: 16px;
   }
 }
 
@@ -565,4 +582,79 @@ footer {
 
 .modal-content {
   padding: 10px 20px;
+}
+
+/**************** Články *****************/
+article h2::after {
+  margin: 10px 0;
+  width: 100px;
+}
+
+.h2-plain::after {
+  display: none;
+}
+
+.article-hero {
+  border-radius: 0.85rem;
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  box-shadow: 0px 0px 16px 0px #706b6b80;
+}
+
+.article-lead {
+  background-color: rgba(68, 136, 0, 0.08);
+  border-left: 5px solid var(--green);
+  border-radius: 0 0.85rem 0.85rem 0;
+  padding: 1rem 1.25rem;
+}
+
+.article-section {
+  margin-top: 2.5rem;
+}
+
+.info-box {
+  background-color: rgba(68, 136, 0, 0.08);
+  border-left: 5px solid var(--green);
+  border-radius: 0 0.85rem 0.85rem 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.warning-box {
+  background-color: rgba(255, 153, 0, 0.1);
+  border-left: 5px solid #cc7a00;
+  border-radius: 0 0.85rem 0.85rem 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.article-img-side {
+  border-radius: 0.85rem;
+  width: 100%;
+  box-shadow: 0px 0px 16px 0px #706b6b80;
+}
+
+.author-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid var(--green);
+}
+
+.milestone-age {
+  display: inline-block;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.article-card-img {
+  height: 220px;
+  object-fit: cover;
 }

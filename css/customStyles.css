@@ -411,6 +411,7 @@ h2::after {
 .contact-right__down {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .contact-right__tel,

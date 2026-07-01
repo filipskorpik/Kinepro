@@ -11,6 +11,63 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/customStyles.css?v=1.0.6">
   <title>Kinepro</title>
+  <!-- Structured Data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Коли найкраще починати метод Войта у немовляти?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Якомога раніше після виявлення проблеми, ідеально в перші місяці життя. Центральна нервова система немовляти найінтенсивніше формується в перші два роки, і вчасно розпочата терапія має найбільший шанс забезпечити нормальний моторний розвиток."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чи болить метод Войта? Чому малюк плаче під час занять?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Метод Войта не болить. Плач у немовлят є звичайною реакцією на незвичну та інтенсивну активацію – дитина не має іншої можливості висловити, що ситуація їй не подобається. Після завершення заняття немовля швидко заспокоюється."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Як часто проводять заняття за методом Войта?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Зазвичай кілька разів на день короткими блоками, які вдома виконують батьки після навчання фізіотерапевтом. Точну частоту та тривалість занять терапевт визначає індивідуально залежно від віку дитини та характеру рухового порушення."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Коли метод Войта не можна застосовувати?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "При гострих запальних чи гарячкових захворюваннях (температура вище 38 °C), при водянистій діареї та інтенсивному блюванні, а також 2–7 днів після вакцинації залежно від типу вакцини та реакції дитини."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чи потрібне для методу Войта направлення від лікаря?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "На обстеження та консультацію до нас можна прийти й без направлення. Для початку самої терапії потрібне призначення лікаря."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Хто проводить у нас метод Войта?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Терапію у нас проводять терапевти-лектори методу Войта – фізіотерапевти найвищої кваліфікації, які не лише застосовують метод, але й самі навчають йому інших фізіотерапевтів. Так ви отримуєте піклування безпосередньо від тих, хто викладає метод Войта."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -311,7 +368,61 @@
 
 
 
-    </div>
+            <section class="article-section mb-5">
+          <h2 class="textColorGreen text-center">Часті запитання</h2>
+          <div id="faqAccordion">
+            <div class="card mb-2">
+              <div class="card-header bg-second">
+                <a class="btn noFocus underline-primary pb-0" data-bs-toggle="collapse" href="#faq1">Коли найкраще починати метод Войта у немовляти?</a>
+              </div>
+              <div id="faq1" class="collapse show" data-bs-parent="#faqAccordion">
+                <div class="card-body"><p class="justify mb-0">Якомога раніше після виявлення проблеми, ідеально в перші місяці життя, коли нервова система найбільш пластична.</p></div>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-header bg-second">
+                <a class="collapsed btn noFocus underline-primary pb-0" data-bs-toggle="collapse" href="#faq2">Чи болить метод Войта?</a>
+              </div>
+              <div id="faq2" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body"><p class="justify mb-0">Ні. Плач є проявом невдоволення від незвичної активації, а не болю. Після заняття дитина швидко заспокоюється.</p></div>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-header bg-second">
+                <a class="collapsed btn noFocus underline-primary pb-0" data-bs-toggle="collapse" href="#faq3">Як часто проводять заняття?</a>
+              </div>
+              <div id="faq3" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body"><p class="justify mb-0">Зазвичай кілька разів на день короткими блоками вдома; точний план визначає фізіотерапевт індивідуально.</p></div>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-header bg-second">
+                <a class="collapsed btn noFocus underline-primary pb-0" data-bs-toggle="collapse" href="#faq4">Коли метод Войта не можна застосовувати?</a>
+              </div>
+              <div id="faq4" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body"><p class="justify mb-0">При гострих запальних чи гарячкових захворюваннях (температура вище 38 °C), при водянистій діареї та інтенсивному блюванні, а також 2–7 днів після вакцинації залежно від типу вакцини та реакції дитини.</p></div>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-header bg-second">
+                <a class="collapsed btn noFocus underline-primary pb-0" data-bs-toggle="collapse" href="#faq5">Чи потрібне направлення від лікаря?</a>
+              </div>
+              <div id="faq5" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body"><p class="justify mb-0">На консультацію можна прийти й без направлення. Для початку самої терапії потрібне призначення лікаря.</p></div>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-header bg-second">
+                <a class="collapsed btn noFocus underline-primary pb-0" data-bs-toggle="collapse" href="#faq6">Хто проводить у нас метод Войта?</a>
+              </div>
+              <div id="faq6" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body"><p class="justify mb-0">Терапію у нас проводять терапевти-лектори методу Войта – фізіотерапевти найвищої кваліфікації, які не лише застосовують метод, але й самі навчають йому інших фізіотерапевтів. Так ви отримуєте піклування безпосередньо від тих, хто викладає метод Войта.</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+</div>
   </main>
   <footer>
     <div class="container">
